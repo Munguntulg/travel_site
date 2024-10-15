@@ -3,57 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аяллын дэлгэрэнгүй мэдээлэл</title>
+    <title>Аяллын Дэлгэрэнгүй</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Нүүр</a></li>
-            <li><a href="tours.html">Аялал</a></li>
-            <li><a href="about.html">Бидний тухай</a></li>
-            <li><a href="contact.html">Холбоо барих</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation Bar -->
+    <header class="main-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Нүүр хуудас</a></li>
+                <li><a href="about.html">Бидний тухай</a></li>
+                <li><a href="services.html">Үйлчилгээ</a></li>
+                <li><a href="tours.html">Алдартай газрууд</a></li>
+                <li><a href="contact.html">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Tour Detail Section -->
     <section class="tour-detail">
         <div class="tour-header">
-            <img src="tour-detail1.jpg" alt="Tour Image">
             <h1>Хяргас нуурын аялал</h1>
+            <p>Үнэ: $150 | Хугацаа: 3 өдөр, 2 шөнө</p>
         </div>
-        <div class="tour-info">
-            <h2>Аяллын тухай</h2>
-            <p>Аяллын дэлгэрэнгүй тайлбар, хөтөлбөр болон үнийн мэдээлэл</p>
+        <div class="tour-gallery">
+            <img src="images/tour1.jpg" alt="Хяргас нуурын аялал" class="main-image">
+            <div class="thumbnail-gallery">
+                <img src="images/tour1-1.jpg" alt="Image 1">
+                <img src="images/tour1-2.jpg" alt="Image 2">
+                <img src="images/tour1-3.jpg" alt="Image 3">
+            </div>
         </div>
-        <div class="tour-map">
-            <h3>Аяллын зураглал</h3>
-            <img src="map.jpg" alt="Tour Map">
-        </div>
-        <div class="faq">
-            <h3>Түгээмэл асуултууд</h3>
-            <p>Асуулт болон хариултууд</p>
-        </div>
-        <div class="reviews">
-            <h3>Сэтгэгдэл</h3>
-            <!-- Reviews listing -->
-        </div>
-        <div class="leave-comment">
-            <h3>Сэтгэгдэл үлдээх</h3>
-            <form>
-                <input type="text" placeholder="Нэр">
-                <textarea placeholder="Сэтгэгдэл"></textarea>
-                <button type="submit">Илгээх</button>
-            </form>
+        <div class="tour-description">
+            <h2>Аяллын Тайлбар</h2>
+            <p>Хяргас нуур нь Монгол орны үзэсгэлэнт нутаг дэвсгэрүүдийн нэг бөгөөд байгалийн үзэсгэлэнтэй, сонирхолтой түүхэн дурсгалт газруудаар дүүрэн. Энэхүү аялал нь танд байгалийн гоо сайхан, соёлын өв, орон нутгийн амьдралтай танилцах боломжийг олгоно.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <!-- Footer structure as before -->
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+        <h2>Хөтөлбөрийн дэлгэрэнгүй</h2>
+        <ul>
+            <li><strong>1-р өдөр:</strong> Улаанбаатараас гарах, Хяргас нуур хүрэх</li>
+            <li><strong>2-р өдөр:</strong> Хяргас нуурын эрэг дээр амрах, сонирхолтой үйл ажиллагаанд оролцох</li>
+            <li><strong>3-р өдөр:</strong> Улаанбаатар руу буцах</li>
+        </ul>
+    </section>
+
+    <!-- Tour Highlights -->
+    <section class="highlights">
+        <h2>Онцлох зүйлс</h2>
+        <ul>
+            <li>Мэргэшсэн хөтөчтэй аялал</li>
+            <li>Сэтгэл татам байгалийн үзэмж</li>
+            <li>Түүх соёлын өвтэй танилцах боломж</li>
+            <li>Ая тухтай тээвэрлэлтийн үйлчилгээ</li>
+        </ul>
+    </section>
+
+    <!-- Availability Calendar -->
+    <section class="availability">
+        <h2>Хугацааны сонголт</h2>
+        <div class="calendar">
+            <p>Ирэх аяллуудын огноо:</p>
+            <ul>
+                <li>2024 оны 10-р сарын 20</li>
+                <li>2024 оны 11-р сарын 5</li>
+                <li>2024 оны 12-р сарын 1</li>
+            </ul>
         </div>
-    </footer>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Хэрэглэгчдийн сэтгэгдэл</h2>
+        <div class="review-item">
+            <p><strong>Нарантуяа:</strong> Аялал маш гоё боллоо! Хөтөч маань мэргэжлийн түвшинд хөтөлж өгсөн.</p>
+            <span>4.5/5</span>
+        </div>
+        <div class="review-item">
+            <p><strong>Бат-Эрдэнэ:</strong> Үнэхээр гайхалтай байгалийн үзэсгэлэн, дахин очмоор байна!</p>
+            <span>5/5</span>
+        </div>
+        <form class="review-form">
+            <h3>Сэтгэгдэл үлдээх</h3>
+            <label for="review-name">Нэр:</label>
+            <input type="text" id="review-name" name="review-name" required>
+            <label for="review-comment">Сэтгэгдэл:</label>
+            <textarea id="review-comment" name="review-comment" rows="4" required></textarea>
+            <button type="submit">Илгээх</button>
+        </form>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking">
+        <h2>Аяллын Захиалга</h2>
+        <form>
+            <label for="name">Нэр:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Имэйл:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Аяллын огноо:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="participants">Хүний тоо:</label>
+            <input type="number" id="participants" name="participants" min="1" max="10" required>
+            <button type="submit">Захиалах</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>Бидний тухай</h3>
+            <p>Монгол орны үзэсгэлэнт газруудаар аялал зохион байгуулдаг тур оператор компани.</p>
+        </div>
+        <div class="footer-contacts">
+            <h3>Холбоо барих</h3>
+            <p>Утас: +976-11-1234567</p>
+            <p>Имэйл: info@travel.mn</p>
+        </div>
+        <div class="footer-follow">
+            <h3>Социал сүлжээнд дагаарай</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2024 Аяллын Сайт. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </div>
+</footer>
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
