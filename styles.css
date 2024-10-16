@@ -221,3 +221,159 @@ form button {
     cursor: pointer;
     border-radius: 5px;
 }
+/* Custom properties */
+:root {
+    --primary-color: #4e91fc;
+    --secondary-color: #fcba03;
+    --dark-bg: #121212;
+    --light-bg: #ffffff;
+    --text-color-dark: #e0e0e0;
+    --text-color-light: #333333;
+    --font-family: "Roboto", sans-serif;
+}
+
+/* Dark/Light mode styles */
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--text-color-dark);
+}
+
+/* Typography */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Navigation styles */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Gradient background */
+.about-section, .contact-section {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.about-section, .contact-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .about-section, .contact-section {
+        padding: 1rem;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+/* Flex and Grid Layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* SVG Inline Style */
+svg.icon {
+    width: 50px;
+    height: 50px;
+    fill: var(--primary-color);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive units */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Transition effects */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
